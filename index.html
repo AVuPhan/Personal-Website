@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Website</title>
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel ="stylesheet" href="css/webpagestyles.css">
+</head>
+<body>
+    <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" style="background-color:black" data-off-canvas data-transition="overlap">
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" style="color:white"  data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="index.html" style="color:white;">Home</a></li>
+                <li><a href="projects.html" style="color:white;">Projects</a></li>
+                <li><a href="resume.html" style="color:white;">Resume</a></li>
+                <li><a href="fun.html" style="color:white;">Fun Stuff</a></li>
+            </ul>
+        </div>
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- main content within a `grid-container` -->
+            <div class="grid-container">
+
+                <!-- `grid-x` represents a row -->
+                <!-- Top bar wil always stay-->
+                <div class="grid-x grid-padding-x" style="background-color:black">
+                    
+                    <!-- Cells for button and page buttons-->
+                    <div class="cell small-2 large-auto" style="background-color:black;">
+                        <!--Button will disappear for medium & large-->
+                        <button type="button" class="menu-icon hide-for-medium" data-toggle="offCanvas"></button>
+                    </div>
+                    <!--Navigation cells only appear in medium & large-->
+                    <div class="cell small-2 large-1 hide-for-small-only butt">
+                        <button type="button"> <a href="index.html" style="color:white">Home</a> </button>
+                    </div>
+                    <div class="cell small-2 large-1 hide-for-small-only">
+                        <button type="button"> <a href="projects.html" style="color:white">Projects</a> </button>
+                    </div>
+                    <div class="cell small-2 large-1 hide-for-small-only">
+                        <button type="button"> <a href="resume.html" style="color:white">Resume</a> </button>
+                    </div>
+                    <div class="cell small-2 large-2 hide-for-small-only">
+                        <button type="button"> <a href="fun.html" style="color:white">Fun Stuff</a> </button>
+                    </div>
+                    <div class="cell small-auto large-auto" style="background-color:black"></div>
+                </div>
+
+                <br/><!--BREAK-->
+
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-auto large auto">
+                        <h1>
+                            Andrew V. Phan
+                        </h1>
+                    </div>
+                </div>
+                
+                <br/><!--BREAK-->
+
+                <!--Picture & about section-->
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-auto large-5">
+                        <br/><!--BREAK-->
+                        <img src="imgs/IMG_1186.JPG" alt="Andy Phan" class="shadowcentered" style="width:60%; border-radius: 25px;">
+                        <br/><!--BREAK-->
+                    </div>
+                    <div class="cell small-auto large-7" style="background-color:whitesmoke;">
+                        <h2>About Me</h2>
+                        <hr class="solidBorder">
+                        <p>
+                            My name is Andy Phan and I am studying computer science at the University of St. Thomas. I am a 1st generation 
+                            college student going into my senior year. I my heritage is from Vietname but I was born and raised  in Richfield 
+                            MN, a small suburb outside Minneapolis and later in my high school years I moved down to Burnville. I chose to 
+                            attend St. Thomas because it was a Catholic university, it was close enough to home, and they gave me the best 
+                            offer. After graduation, I hope to travel the world a bit before I start working. I hope to start a career at a 
+                            company where the work I do is meaningful and impacts people's lives for the better.
+                        </p>
+                        <hr class="solidBorder">
+                    </div>
+                </div><!--End of about section-->
+
+                <br/><!--BREAK-->
+                <br/><!--BREAK-->
+
+                <!--My family & Picture-->
+                <div class="grid-x grid-padding-x">
+                    <div class=" cell small-auto large-7" style="background-color:whitesmoke;">
+                        <h2> My Gia Đình </h2>
+                        <hr class="solidBorder">
+                        <p>
+                            I live with my mom & dad, and 2 siblings. Mom owns her own tailor shop and dad is retired. Since retirement, dad 
+                            picked up carpentry as a hobby to fill his time as well as help out my mom at the shop. I have an older brother 
+                            who studied computer science at the University of Minnesota and is now working full time. I have a younger sister 
+                            who is a senior in high school. She is planning to study pre med at some univerity or college TBD in hopes of 
+                            becoming a pediatrician. This photo was taken at our family's favorite restaurant during her 63rd birthday celebration.
+                        </p>
+                        <hr class="solidBorder">
+                    </div>
+                    <div class="cell small-auto large-5">
+                        <br/><!--BREAK-->
+                        <img src="imgs\IMG_3549.jpg" alt="family" class="shadowcentered" style="border-radius: 25px;">
+                        <br/><!--BREAK-->
+                    </div>
+                </div><!--End of family section-->
+
+                <br/><!--BREAK-->
+                <br/><!--BREAK-->
+
+                <!--Bottom Bar-->
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-auto large-auto" style="background-color:black"></div>
+                    <div class="cell small-auto large-auto" style="text-align: center; background-color:black; font-size: 60%; color:white;">
+                    Copyright 2022
+                    </div>
+                    <div class="cell small-auto large-auto" style="background-color:black"></div>
+                </div>
+                
+            </div><!--End of grid container-->
+        </div><!--End of page content-->
+    </div><!--end of off-canvas wrapper-->
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>

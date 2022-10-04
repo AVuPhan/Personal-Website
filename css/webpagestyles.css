@@ -1,0 +1,46 @@
+#mypic{
+    border-radius: 50%;
+    width: 300px;
+}
+
+hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+
+hr.solidBorder{
+    border: top 5px solid black;
+}
+
+.shadowcentered{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+.curved{
+    border-radius: 25px;
+}
+
+h1{
+    text-align: center;
+    margin:auto;
+    font-size: 5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    border-style: dashed;
+    background-color:whitesmoke;
+}
+
+h2, h4, h5{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
