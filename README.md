@@ -3,7 +3,6 @@
 - Learned to apply basic HTML & CSS concepts.
 - Uses OpenJS Foundation for page structure & user interactions.
 - Page runs right from Github. Press the link down below to view it.
-- 
 ### Languages & Tools used: 🧰
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
